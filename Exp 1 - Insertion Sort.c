@@ -10,7 +10,7 @@ void insertionSort(int arr[], int n) {
         // Shift elements of arr[0..i-1] that are greater than key
         while (j > -1 && arr[j] > key) {
             arr[j + 1] = arr[j];
-            j = j - 1;
+            j--;
         }
         arr[j + 1] = key;  // Insert the key at its correct position
     }
